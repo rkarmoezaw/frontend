@@ -10,6 +10,12 @@ import ItemList from '@/app/components/list/ItemList';
 import TodoListDemo from '@/app/components/list/TodoListDemo';
 import CustomButtonDemo from './components/CustomButtonDemo';
 import UserAccount from './components/conditional_render/UserAccount';
+import PropagationDemo from './components/Propagation_Demo';
+import Counter from './components/Counter';
+import TabDemo from './components/Tab/TabDemo';
+import StateProblem1 from './components/state/StateProblem1';
+import UpdateObject from './components/state/UpdateObject';
+import ItemLists from './components/ItemLists';
 
 export default function Home() {
   //console.log("Home page profile ",Profile());
@@ -57,8 +63,16 @@ export default function Home() {
       {/* <UserAccount role={'admin'} /> */}
       {/* <Conditional role={'admin'} /> */}
       {/* <ItemList items={['Apple', 'Orange', 'Banna']} /> */}
-      <TodoListDemo />
+      {/* <TodoListDemo /> */}
       {/* <CustomButtonDemo /> */}
+      {/* <PropagationDemo /> */}
+      {/* <Counter /> */}
+      {/* <Counter /> */}
+
+      {/* <TabDemo /> */}
+      {/* <StateProblem1 /> */}
+      {/* <UpdateObject /> */}
+      <ItemLists />
     </div>
   );
 }
