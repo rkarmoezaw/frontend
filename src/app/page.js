@@ -16,6 +16,11 @@ import TabDemo from './components/Tab/TabDemo';
 import StateProblem1 from './components/state/StateProblem1';
 import UpdateObject from './components/state/UpdateObject';
 import ItemLists from './components/ItemLists';
+import Reconsilation from './components/reconsilation/Reconsilation';
+import SameRoot from './components/reconsilation/SameRoot';
+import DifferentRoot from './components/reconsilation/DifferentRoot';
+import Differentkeys from './components/reconsilation/Differentkeys';
+import Counterwithreducer from './components/reducer/Counterwithreducer';
 
 export default function Home() {
   //console.log("Home page profile ",Profile());
@@ -72,7 +77,12 @@ export default function Home() {
       {/* <TabDemo /> */}
       {/* <StateProblem1 /> */}
       {/* <UpdateObject /> */}
-      <ItemLists />
+      {/* <ItemLists /> */}
+      {/* <Reconsilation /> */}
+      {/* <SameRoot /> */}
+      {/* <DifferentRoot /> */}
+      {/* <Differentkeys /> */}
+      {<Counterwithreducer />}
     </div>
   );
 }

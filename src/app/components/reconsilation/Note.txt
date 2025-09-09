@@ -1,0 +1,13 @@
+{ different JSX} destroy and create
+{different JSX}
+
+different keys => destroy and create
+
+different root => destroy and create
+
+different order => destroy and create
+<div><Counter/></div>            <div><Counter/></div> => Update
+<div><Counter/></div>            <div>Hello<Counter/></div> => destroy and create
+<div><Counter/></div>            <div><Counter/>Hello</div> => Update
+
+
