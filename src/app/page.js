@@ -21,6 +21,10 @@ import SameRoot from './components/reconsilation/SameRoot';
 import DifferentRoot from './components/reconsilation/DifferentRoot';
 import Differentkeys from './components/reconsilation/Differentkeys';
 import Counterwithreducer from './components/reducer/Counterwithreducer';
+import ToDoListWithReducer from './components/reducer/ToDoListWithreducer';
+import WhyContext from './components/context/WhyContext';
+import ContextDemo from './components/context/ ContextDemo';
+import ToDoReducerWithContext from './components/context/ToDoReducerWithContext';
 
 export default function Home() {
   //console.log("Home page profile ",Profile());
@@ -82,7 +86,11 @@ export default function Home() {
       {/* <SameRoot /> */}
       {/* <DifferentRoot /> */}
       {/* <Differentkeys /> */}
-      {<Counterwithreducer />}
+      {/* {<Counterwithreducer />} */}
+      {/* <ToDoListWithReducer /> */}
+      {/* <WhyContext /> */}
+      {/* <ContextDemo /> */}
+      <ToDoReducerWithContext />
     </div>
   );
 }
