@@ -1,0 +1,11 @@
+.product-table,
+.product-row {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.not-in-stock {
+  color: red;
+}

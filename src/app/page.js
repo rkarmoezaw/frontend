@@ -25,6 +25,13 @@ import ToDoListWithReducer from './components/reducer/ToDoListWithreducer';
 import WhyContext from './components/context/WhyContext';
 import ContextDemo from './components/context/ ContextDemo';
 import ToDoReducerWithContext from './components/context/ToDoReducerWithContext';
+import FilterableProduct from './components/product/FilterableProduct';
+import FilterableProductTable from './components/product/FilterableProductTable';
+import WhyRef from './components/product/ref/WhyRef';
+import RefDemo from './components/product/ref/RefDemo';
+import FocusInput from './components/product/ref/FocusInput';
+import WhyEffect from './components/effect/WhyEffect';
+import EffectDemo from './components/effect/EffectDemo';
 
 export default function Home() {
   //console.log("Home page profile ",Profile());
@@ -90,7 +97,13 @@ export default function Home() {
       {/* <ToDoListWithReducer /> */}
       {/* <WhyContext /> */}
       {/* <ContextDemo /> */}
-      <ToDoReducerWithContext />
+      {/* <ToDoReducerWithContext /> */}
+      {/* <FilterableProduct /> */}
+      {/* <WhyRef /> */}
+      {/* <RefDemo /> */}
+      {/* <FocusInput /> */}
+      {/* <WhyEffect /> */}
+      <EffectDemo />
     </div>
   );
 }
