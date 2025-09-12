@@ -1,18 +1,21 @@
 'use client';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
-let todos = [
-  { id: 1, title: 'Task 1' },
-  { id: 2, title: 'Task 2' },
-  { id: 3, title: 'Task 3' },
-  { id: 4, title: 'Task 4' },
-];
+let todos = [];
 
 let id = 5;
 
 export default function ItemLists() {
   const [todoText, setTodoText] = useState('');
   const [toDo, setToDo] = useState(todos);
+
+  useEffect(() => {
+    fetch('https://jsonplaceholder.typicode.com/todos/')
+      .then(response => response.json())
+      .then(json => setToDo(json));
+  }, []);
+
+  console.log(toDo);
 
   const onDelete = item => {
     setToDo(toDo.filter(td => td.id !== item.id));

@@ -1,6 +1,7 @@
 'use client';
 
 import { useReducer, useState } from 'react';
+import UseCustomReducer from '../hook/UseCustomReducer';
 
 let initTodos = [
   { id: 1, title: 'Task 1' },
@@ -91,7 +92,7 @@ function TodoList({ todos, onDelete, onUpdate }) {
 }
 
 export default function ToDoListWithReducer() {
-  const [todos, dispatch] = useReducer(todoReducer, initTodos);
+  const [todos, dispatch] = UseCustomReducer(todoReducer, initTodos);
   const onDeleteHandler = todo => {
     dispatch({
       type: 'delete',

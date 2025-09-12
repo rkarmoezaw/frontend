@@ -27,11 +27,14 @@ import ContextDemo from './components/context/ ContextDemo';
 import ToDoReducerWithContext from './components/context/ToDoReducerWithContext';
 import FilterableProduct from './components/product/FilterableProduct';
 import FilterableProductTable from './components/product/FilterableProductTable';
-import WhyRef from './components/product/ref/WhyRef';
-import RefDemo from './components/product/ref/RefDemo';
-import FocusInput from './components/product/ref/FocusInput';
+import WhyRef from './components/ref/WhyRef';
+import RefDemo from './components/ref/RefDemo';
+import FocusInput from './components/ref/FocusInput';
 import WhyEffect from './components/effect/WhyEffect';
 import EffectDemo from './components/effect/EffectDemo';
+import WhyClean from './components/effect/WhyClean';
+import FetchTodo from './components/hook/FetchTodo';
+import FetchUser from './components/hook/FetchUser';
 
 export default function Home() {
   //console.log("Home page profile ",Profile());
@@ -94,7 +97,7 @@ export default function Home() {
       {/* <DifferentRoot /> */}
       {/* <Differentkeys /> */}
       {/* {<Counterwithreducer />} */}
-      {/* <ToDoListWithReducer /> */}
+      <ToDoListWithReducer />
       {/* <WhyContext /> */}
       {/* <ContextDemo /> */}
       {/* <ToDoReducerWithContext /> */}
@@ -103,7 +106,11 @@ export default function Home() {
       {/* <RefDemo /> */}
       {/* <FocusInput /> */}
       {/* <WhyEffect /> */}
-      <EffectDemo />
+      {/* <EffectDemo /> */}
+      {/* <ItemLists /> */}
+      {/* <WhyClean /> */}
+      {/* <FetchTodo /> */}
+      {/* <FetchUser /> */}
     </div>
   );
 }
