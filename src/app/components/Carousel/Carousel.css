@@ -1,0 +1,11 @@
+.carousel-container {
+  width: 500px;
+  height: 300px;
+  border: 1px solid lightgreen;
+}
+
+.carousel-container .content {
+  width: 100%;
+  height: 100%;
+  box-shadow: 10px 5px 5px lightgray;
+}

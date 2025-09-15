@@ -35,6 +35,13 @@ import EffectDemo from './components/effect/EffectDemo';
 import WhyClean from './components/effect/WhyClean';
 import FetchTodo from './components/hook/FetchTodo';
 import FetchUser from './components/hook/FetchUser';
+import CallbackHookDemo from './components/hook/CallbackHookDemo';
+import Modal from './components/modal/Modal';
+import Carousel from './components/Carousel/Carousel';
+import Whyhoc from './components/designpatterns/hoc/Whyhoc';
+import AuthhocDemo from './components/designpatterns/hoc/AuthhocDemo';
+import WhyRenderProperty from './components/designpatterns/render/WhyRenderProperty';
+import RenderProperty from './components/designpatterns/render/RenderProperty';
 
 export default function Home() {
   //console.log("Home page profile ",Profile());
@@ -97,7 +104,7 @@ export default function Home() {
       {/* <DifferentRoot /> */}
       {/* <Differentkeys /> */}
       {/* {<Counterwithreducer />} */}
-      <ToDoListWithReducer />
+      {/* <ToDoListWithReducer /> */}
       {/* <WhyContext /> */}
       {/* <ContextDemo /> */}
       {/* <ToDoReducerWithContext /> */}
@@ -111,6 +118,18 @@ export default function Home() {
       {/* <WhyClean /> */}
       {/* <FetchTodo /> */}
       {/* <FetchUser /> */}
+      {/* <CallbackHookDemo /> */}
+      {/* <Modal /> */}
+      {/* <Carousel>
+        <div>Page 1</div>
+        <div>Page 2</div>
+        <div>Page 3</div>
+        <div>Page 4</div>
+      </Carousel> */}
+      {/* <Whyhoc /> */}
+      {/* <AuthhocDemo /> */}
+      {/* <WhyRenderProperty /> */}
+      <RenderProperty />
     </div>
   );
 }

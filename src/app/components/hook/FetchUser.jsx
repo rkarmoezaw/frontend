@@ -1,25 +1,13 @@
 'use client';
-
-import { useEffect, useState } from 'react';
+import UseCustomFetch from './UseCustomFetch';
 
 export default function FetchUser() {
-  const [user, setUser] = useState([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/users/')
-      .then(response => response.json())
-      .then(json => {
-        setUser(json);
-        setLoading(false);
-      });
-  }, []);
-
+  const [loading, users] = UseCustomFetch('https://jsonplaceholder.typicode.com/users');
   return (
     <div>
       {loading && <div>Loading...</div>}
-      {user.map(user => (
-        <div key={user.id}>{user.name}</div>
+      {users.map(data => (
+        <div key={data.id}>{data.name}</div>
       ))}
     </div>
   );
